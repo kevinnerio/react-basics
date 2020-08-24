@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Practice</title>
+  </head>
+  <body>
+
+  	<p>
+     <!-- I will create a component that loads here. --> 
+     <h1 class='MyInfo' id='noButton'></h1>
+    </p>
+
+    <div> 
+    <p class='MyInfo' id='thisElement'></p>
+    <p class='Myinfo' id='addressWrapper'>
+      <!-- create sections for each item in the address --> 
+    	<div id='addressStreet'> </div>
+    	<div id='addressCity'></div>
+    	<div id='addressState'></div>
+    </p>	
+   	</div>
+
+    <div class='skillsWrapper'>
+      <p class='career_title' id='career_title'></p> 
+      <p class='university' id='career_education'></p>
+      <p class='major' id='career_experience'>
+        <ul class='noMarker'>
+            <li class='liNoMarker'>PHP:<p id="php"></p></li>
+            <li class='liNoMarker'>HTML:<p id="html"></p></li>
+            <li class='liNoMarker'>React:<p id="react"></p></li>
+            <li class='liNoMarker'>CSS:<p id="css"></p></li>
+        </ul>
+      </p>
+      <p class='city' id='city'></p>
+    <div> 
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="js/MyInfo.js"></script>
+    <script src='js/Skills.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+
+  </body>
+</html>
